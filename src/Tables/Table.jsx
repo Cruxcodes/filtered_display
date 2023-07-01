@@ -1,6 +1,6 @@
 import React from "react";
 import TableData from "./TableData";
-import { rapid, evaluation, conventional } from "../data";
+import { rapid, evaluation, conventional, emphatic } from "../data";
 
 export function RapidTable() {
   return (
@@ -317,7 +317,7 @@ function Emphatic(){
       </div>
       <div className="table__plans">
         <div></div>
-        {conventional.plans.map((link) => {
+        {emphatic.plans.map((link) => {
           return <a href={link}>Select Plan</a>;
         })}
       </div>
