@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  font-size: 14px;
+}
+
+button {
+  padding: 15px 25px;
+  outline: none;
+  color: white;
+  background: #000;
+  border: none;
+  margin: 2px;
+}
+
+.lightblue {
+  background: rgba(0, 0, 255, 0.603);
+}
+
+.blue {
+  background: rgb(83, 83, 177);
+}
+
+.darkblue {
+  background: rgb(18, 18, 156);
+}
+
+.title {
+  -webkit-text-decoration: underline dotted white;
+          text-decoration: underline dotted white;
+  background: #000;
+  text-underline-offset: 8px;
+  color: white;
+}
+
+p {
+  border-right: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 25px;
+}
+
+.header p {
+  background: rgb(128, 128, 128);
+  font-weight: 600;
+}
+
+.table__plans a {
+  margin: 20px 10px;
+  background: transparent;
+  border: 2px solid rgb(221, 221, 221);
+  padding: 20px;
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.table__plans a:hover {
+  background: rgba(107, 107, 107, 0.671);
+}
+.table > div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.table > div .span {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.evaluation > div {
+  grid-template-columns: repeat(8, 1fr);
+}
+.evaluation > div .span {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+.conventional > div {
+  grid-template-columns: repeat(6, 1fr);
+}
+.conventional > div .span {
+  grid-column-start: 2;
+  grid-column-end: -1;
+}/*# sourceMappingURL=styles.css.map */
