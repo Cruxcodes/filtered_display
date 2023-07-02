@@ -15,14 +15,86 @@ export const evaluation = {
 };
 
 export const conventional = {
-  amount: [10000, 20000, 50000, 100000, 10000,],
-
+  amount: [10000, 20000, 50000, 100000, 10000],
   assured_funding: [10000, 20000, 50000, 100000, 100000],
   onetime_fee: [500, 1000, 2500, 5000, 100000],
   plans: ["#", "#", "#", "#", "#"],
 };
 export const emphatic = {
+  amount: [10000, 20000, 50000, 100000, 10000],
   assured_funding: [10000, 20000, 50000, 100000, 100000],
   onetime_fee: [500, 1000, 2500, 5000, 100000],
   plans: ["#", "#", "#", "#", "#"],
 };
+
+
+export const rapid_resp = [
+  {
+    amount : 10000,
+    target: "No Targets – You get paid 12% of the profits you earn in your account",
+    trading_Days : "3 times a week",
+    drawdown: 500,
+    overall_drawdown: 1200,
+    leverage : "1:500",
+    registration: 99,
+    fees: "No Monthly fees",
+    to_plan: "#"
+  },
+  {
+    amount : 10000,
+    target: "No Targets – You get paid 12% of the profits you earn in your account",
+    trading_Days : "3 times a week",
+    drawdown: 500,
+    overall_drawdown: 1200,
+    leverage : "1:500",
+    registration: 99,
+    fees: "No Monthly fees",
+    to_plan: "#"
+  },
+  {
+    amount : 10000,
+    target: "No Targets – You get paid 12% of the profits you earn in your account",
+    trading_Days : "3 times a week",
+    drawdown: 500,
+    overall_drawdown: 1200,
+    leverage : "1:500",
+    registration: 99,
+    fees: "No Monthly fees",
+    to_plan: "#"
+  }
+]
+export const eval_resp = [
+  {
+    amount : 15000,
+    target: "No Targets – You get paid 12% of the profits you earn in your account",
+    trading_Days : "3 times a week",
+    drawdown: 500,
+    overall_drawdown: 1200,
+    leverage : "1:500",
+    registration: 99,
+    fees: "No Monthly fees",
+    to_plan: "#"
+  },
+  {
+    amount : 2000,
+    target: "No Targets – You get paid 12% of the profits you earn in your account",
+    trading_Days : "3 times a week",
+    drawdown: 500,
+    overall_drawdown: 1200,
+    leverage : "1:500",
+    registration: 99,
+    fees: "No Monthly fees",
+    to_plan: "#"
+  },
+  {
+    amount : 32132132,
+    target: "No Targets – You get paid 12% of the profits you earn in your account",
+    trading_Days : "3 times a week",
+    drawdown: 500,
+    overall_drawdown: 1200,
+    leverage : "1:500",
+    registration: 99,
+    fees: "No Monthly fees",
+    to_plan: "#"
+  }
+]

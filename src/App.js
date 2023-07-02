@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import Tables from './Tables';
 import './styles/styles.css'
 

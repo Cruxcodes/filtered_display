@@ -1,9 +1,17 @@
+body {
+  background: brown;
+}
+
 * {
   margin: 0px;
   font-size: 14px;
 }
 
-button {
+.tablefill {
+  text-align: center;
+}
+
+.tablefill button {
   padding: 15px 25px;
   outline: none;
   color: white;
@@ -32,7 +40,7 @@ button {
   color: white;
 }
 
-p {
+.tablefill p {
   border-right: 1px solid rgb(221, 221, 221);
   border-bottom: 1px solid rgb(221, 221, 221);
   padding: 25px;
@@ -43,6 +51,9 @@ p {
   font-weight: 600;
 }
 
+.table {
+  width: 100%;
+}
 .table__plans a {
   margin: 20px 10px;
   background: transparent;
@@ -78,4 +89,36 @@ p {
 .conventional > div .span {
   grid-column-start: 2;
   grid-column-end: -1;
+}
+
+.resp {
+  padding: 20px;
+}
+.resp header {
+  background: rgb(149, 149, 173);
+  padding: 20px;
+}
+.resp p {
+  padding: 10px;
+  border: none;
+}
+.resp .value {
+  margin-bottom: 10px;
+  background: white;
+}
+.resp__title {
+  color: rgb(151, 151, 219);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.resp__link {
+  width: 100%;
+  background: red;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.resp__link a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

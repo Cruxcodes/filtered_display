@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { RapidTable, EvaluationTable, Accelerated } from "./Tables/Table";
+import Responsive_Table from "./Tables/responsive/Responsive_Table";
+import Rapid from "./Tables/responsive/Rapid";
+import { rapid_resp } from "./data";
 
 function Tables() {
   const [windowSize, setWindowSize] = useState({
@@ -8,6 +11,9 @@ function Tables() {
   });
   const [type, setType] = React.useState("");
 
+  useEffect(() => {
+    setType("rapid");
+  }, []);
   useEffect(() => {
     // Update windowSize state whenever the window is resized
     const handleResize = () => {
@@ -27,19 +33,30 @@ function Tables() {
   }, []); // Empty dependency array to run the effect only once
 
   return (
-    <div>
+    <div className="tablefill">
       <div className="selections">
-        <button className="lightblue" onClick={() => setType("rapid")}>Rapid</button>
-        <button className="blue" onClick={() => setType("evaluation")}>Evaluation</button>
-        <button className="darkblue" onClick={() => setType("accelerated")}>Accelerated</button>
+        <button className="lightblue" onClick={() => setType("rapid")}>
+          Rapid
+        </button>
+        <button className="blue" onClick={() => setType("evaluation")}>
+          Evaluation
+        </button>
+        <button className="darkblue" onClick={() => setType("accelerated")}>
+          Accelerated
+        </button>
       </div>
+
       {type === "rapid" &&
-        (windowSize.width > 768 ? <RapidTable /> : "the other slider comp")}
+        (windowSize.width > 768 ? (
+          <RapidTable />
+        ) : (
+          <Responsive_Table type={type} />
+        ))}
       {type === "evaluation" &&
         (windowSize.width > 768 ? (
           <EvaluationTable />
         ) : (
-          "the other slider comp"
+          <Responsive_Table type={type} />
         ))}
       {type === "accelerated" && <Accelerated />}
     </div>
